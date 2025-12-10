@@ -36,7 +36,7 @@ const App = () => {
   return (
     <>
       <ThreeBackground />
-      <div style={{ position: "relative", zIndex: 1 }}>
+      <div style={{ position: "relative", zIndex: 1, overflowX: "hidden", width: "100%", maxWidth: "100vw" }}>
         <NavigationBar />
         <Header />
         <About />

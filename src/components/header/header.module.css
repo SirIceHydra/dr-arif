@@ -2,6 +2,7 @@
   background: var(--bg-cream);
   position: relative;
   overflow: hidden;
+  padding-top: 8rem; /* Account for fixed navigation bar */
 }
 
 .header-container::before {
@@ -121,11 +122,15 @@
 }
 
 @media (max-width: 1024px) {
+  .header-container {
+    padding-top: 7rem; /* Slightly smaller for tablets */
+  }
+  
   .header {
     flex-direction: column;
     gap: 4rem;
     text-align: center;
-    padding-block: 12rem 6rem;
+    padding-block: 8rem 6rem;
   }
 
   .header-content {

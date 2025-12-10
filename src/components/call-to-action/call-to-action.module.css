@@ -1,0 +1,146 @@
+.call-to-action {
+  padding-block: 10rem;
+  background: var(--dark-bg);
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.02' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+  position: relative;
+  overflow: hidden;
+}
+
+.call-to-action-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-main {
+  max-width: 60rem;
+}
+
+.title {
+  color: var(--white-color);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: var(--heading-font);
+  margin-bottom: 2.4rem;
+}
+
+.content-desc {
+  color: var(--text-color-5);
+  font-size: 1.8rem;
+  line-height: 1.7;
+  margin-bottom: 3.2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.cta-buttons button {
+  border-radius: 6px;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 32rem;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  padding: 2.4rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(-4px);
+  border-color: rgba(30, 111, 217, 0.3);
+}
+
+.contact-icon {
+  font-size: 2.8rem;
+  color: var(--primary-light);
+  margin-bottom: 1.2rem;
+}
+
+.contact-card h4 {
+  color: var(--white-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-card a,
+.contact-card p {
+  display: block;
+  color: var(--text-color-5);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+  color: var(--primary-light);
+}
+
+@media (max-width: 1024px) {
+  .call-to-action-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cta-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .contact-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: auto;
+    width: 100%;
+  }
+
+  .contact-card {
+    flex: 1;
+    min-width: 24rem;
+    text-align: center;
+  }
+
+  .contact-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .contact-cards {
+    flex-direction: column;
+  }
+
+  .contact-card {
+    min-width: 100%;
+  }
+}

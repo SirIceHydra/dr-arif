@@ -1,0 +1,144 @@
+.success-story {
+  padding-block: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 4rem;
+}
+
+.story-content {
+  max-width: 53.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story-content-heading {
+  color: var(--text-color-1);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: var(--heading-font);
+}
+
+.divider {
+  width: 8rem;
+  height: 3px;
+  background: var(--primary-color);
+  border-radius: 2px;
+  margin-block: 2.4rem;
+}
+
+.story-content-desc {
+  color: var(--text-color-2);
+  line-height: 1.7;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  color: var(--text-color-1);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.benefit-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.story-quote {
+  padding: 5rem;
+  border: none;
+  background: var(--primary-shade-color);
+  border-radius: 16px;
+  max-width: 56rem;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(30, 111, 217, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.story-quote:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 80px rgba(30, 111, 217, 0.15);
+}
+
+.story-quote::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--primary-color);
+  border-radius: 16px 16px 0 0;
+}
+
+.quote {
+  font-size: 4.8rem;
+  color: var(--primary-color);
+  opacity: 0.3;
+}
+
+.quote-text {
+  color: var(--text-color-1);
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+.quote-footer {
+  margin-top: 2.4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(30, 111, 217, 0.15);
+}
+
+.quote-source {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1024px) {
+  .success-story {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .story-content {
+    align-items: center;
+  }
+
+  .divider {
+    margin-inline: auto;
+  }
+
+  .benefits-list {
+    align-items: center;
+  }
+
+  .story-quote {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,197 @@
+.work-history {
+  padding-block: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.work-his-heading-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.history-heading {
+  color: var(--text-color-1);
+  font-size: 4.8rem;
+  font-weight: 700;
+  font-family: var(--heading-font);
+}
+
+.divider {
+  width: 8rem;
+  height: 0.3rem;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+.note-icon {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.history-desc {
+  max-width: 64.8rem;
+  color: var(--text-color-2);
+  line-height: 24px;
+  font-size: 1.6rem;
+}
+
+.work-history-card-wrapper {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.location-card {
+  background: var(--white-color);
+  border: 1px solid #e6e8eb;
+  border-radius: 12px;
+  padding: 3.2rem;
+  max-width: 50rem;
+  flex: 1;
+  min-width: 36rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.location-card:hover {
+  border-color: var(--primary-light);
+  box-shadow: 0px 20px 60px 0px rgba(30, 111, 217, 0.12);
+  transform: translateY(-4px);
+}
+
+.card-header {
+  margin-bottom: 2.4rem;
+}
+
+.location-badge {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.2rem;
+}
+
+.location-name {
+  color: var(--text-color-1);
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: var(--heading-font);
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.info-row {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+.info-icon {
+  color: var(--primary-color);
+  font-size: 2rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.address {
+  color: var(--text-color-2);
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.floor {
+  color: var(--text-color-3);
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+}
+
+.phone, .email {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.phone:hover, .email:hover {
+  color: var(--primary-dark);
+}
+
+.description {
+  color: var(--text-color-3);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid #e6e8eb;
+}
+
+.book-btn {
+  margin-top: 2.4rem;
+  background: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 1.6rem 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.book-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(30, 111, 217, 0.25);
+}
+
+.note-wrapper {
+  width: 100%;
+  max-width: 80rem;
+}
+
+.note {
+  background: var(--primary-shade-color);
+  padding: 1.6rem 2.4rem;
+  border-radius: 8px;
+  color: var(--text-color-1);
+  font-size: 1.4rem;
+  text-align: center;
+  border-left: 4px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.note strong {
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .location-card {
+    min-width: 100%;
+  }
+  
+  .history-heading {
+    font-size: 3.6rem;
+  }
+}

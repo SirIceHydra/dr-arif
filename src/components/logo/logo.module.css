@@ -1,0 +1,19 @@
+.logo {
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 24px;
+  width: 22rem;
+  letter-spacing: 0.5px;
+  font-family: var(--heading-font);
+}
+
+.dark {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.light {
+  background-color: var(--primary-dark);
+  color: var(--white-color);
+}

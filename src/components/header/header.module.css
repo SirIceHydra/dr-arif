@@ -1,0 +1,162 @@
+.header-container {
+  background: var(--bg-cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231e6fd9' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%231e6fd9' fill-opacity='0.04' fill-rule='evenodd'/%3E%3C/svg%3E");
+  opacity: 1;
+  z-index: 0;
+}
+
+.header-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(ellipse at 80% 50%, rgba(30, 111, 217, 0.08) 0%, transparent 60%);
+  z-index: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 16rem 8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.header-content {
+  max-width: 75.9rem;
+  color: var(--text-color-1);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.header-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header-title {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 1.6rem;
+  font-family: var(--heading-font);
+  color: var(--text-color-1);
+}
+
+.header-subtitle {
+  font-size: 2rem;
+  color: var(--text-color-2);
+  margin-top: 1.2rem;
+  font-weight: 500;
+}
+
+.header-desc {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  max-width: 64.8rem;
+  color: var(--text-color-2);
+}
+
+.header-button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  flex-wrap: wrap;
+}
+
+.header-img-parent {
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 1.5rem;
+  background: var(--white-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 20px rgba(30, 111, 217, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.header-img-parent::before {
+  display: none;
+}
+
+.header-img-parent:hover {
+  box-shadow: 0 6px 25px rgba(30, 111, 217, 0.15);
+}
+
+.header-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .header-img-parent {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    padding-block: 12rem 6rem;
+  }
+
+  .header-content {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .header-title {
+    font-size: 4rem;
+  }
+
+  .header-button-wrapper {
+    justify-content: center;
+  }
+
+  .header-img-parent {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-title {
+    font-size: 3.2rem;
+  }
+
+  .header-name {
+    font-size: 1.4rem;
+  }
+
+  .header-desc {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
